@@ -1,0 +1,77 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar><span>s</span> Express Lands</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#"> <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>Dashboard</a>
+      <a mat-list-item href="#">Menu Item 1</a>
+      <a mat-list-item href="#">	<mat-icon>people_outline</mat-icon>Menu Item 2</a>
+      <a mat-list-item href="#">Menu Item 3</a>
+      <a mat-list-item href="#">Menu Item 4</a>
+      <a mat-list-item href="#">Menu Item 5</a>
+      <div class="last">
+
+        <a mat-list-item href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 size" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          Manage Users</a>
+      </div>
+      
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="white">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon> short_text </mat-icon>
+       
+      </button>
+      <div>
+        <mat-icon class="larger-screen"> short_text</mat-icon>
+      </div>
+      <span class="d-flex"></span>
+      <div class="head">
+        <div class="left">
+          <div class="card">
+            <div class="flex-it">
+              <mat-icon class="none primary">notifications_none</mat-icon>
+              <div class="center">Notifications Center<br/>
+                <span class="unread">You have 2 unread notifications</span>
+
+              </div>
+              <div>
+                
+                <button class="btn-small">2</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="card">
+            <div class="flex-it">
+              <mat-icon class="person">person_outline</mat-icon>
+                <div class="center">Chidimma Nwanya<br/>
+                  <span class="unread">Vanity By Juls</span>
+
+                </div>
+                <div>
+
+                  <button class="small">Log out</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </mat-toolbar>
+    <ng-content></ng-content>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
