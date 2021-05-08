@@ -2,9 +2,88 @@
     display: flex;
     gap: 25px;
     margin-left: 15px;
+    margin-bottom: 20px;
 }
-.left-card, .right-card {
+.left-card, .right-card  {
     border: 1px solid blue;
     width: 475px;
     border-radius: 5px;
 }
+
+span.left-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 17px;
+    font-size: 17px;
+    margin-top: 12px;
+}
+.card-left {
+    background: linear-gradient(to right, rgb(22, 44, 116), rgb(36, 83, 236)) ;
+    color: white;
+    border: none;
+}
+.right {
+    background-color: rgb(232, 234, 238); 
+    border: none;
+}
+.sect, .toptwo-card {
+    margin-left: 20px;
+    font-size: 12px;
+    position: relative;
+
+}
+
+.take-btn {
+    padding: 8px 20px;
+    font-size: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    color: rgb(22, 44, 116);
+
+}
+.new-request {
+    background-color: rgb(22, 44, 116);
+    color: white;
+    text-transform: capitalize;
+}
+i.fas.fa-desktop.desktop  {
+    font-weight: 900;
+    font-size: 90px;
+}
+.desktop_icon {
+    position: absolute;
+    top: 36%;
+    left: 38%;
+    color: darkgray;
+}
+.ipad {
+    position: absolute;
+    top: 89px;
+    right: 0;
+}
+.flex-two {
+    position: relative;
+}
+i.fas.fa-basketball-ball.basketball {
+    font-size: 90px;
+    color: darkgray;
+    position: absolute;
+    right: 0;
+}
+i.fas.fa-tablet-alt.tablet-small {
+    font-size: 34px;
+    right: 62px;
+    top: 45px;
+    position: absolute;
+    z-index: 1;
+}
+i.fas.fa-tablet-alt.tablet-big {
+    font-size: 65px;
+    position: absolute;
+    right: 0;
+    margin-top: 17px;
+}
+
+

@@ -1,5 +1,6 @@
 .navlist {
     gap: 5px;
+    margin-bottom: 20px;
 }
 .space {
     flex: 1 1 auto;
@@ -23,7 +24,6 @@ mat-icon.mat-icon.notranslate.material-icons.mat-icon-no-color {
     margin-top: 4px;
 }
 .btn.primary {
-    background: rgb(170, 181, 241);
     outline: none;
     border: 1px;
 }

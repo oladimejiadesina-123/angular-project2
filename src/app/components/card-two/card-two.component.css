@@ -1,6 +1,36 @@
-.card-list {
-    display: flex;
-}
 .example-card {
-    max-width: 400px;
+    max-width: 300px;
+    width: 287px;
   }
+  .ge-card {
+      display: flex;
+      gap: 10px;
+      margin-left: 13px;
+  }
+  select {
+    font-size: 12px;
+    outline: none;
+    border: none;
+}
+  .spaci {
+    display: flex;
+    font-size: 13px;
+    gap: 31px;
+
+      
+  }
+.card-To {
+    border: 1px solid;
+}
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.capex, .opex, .assets {
+    text-align: center;
+}
+.cards-flex {
+    display: flex;
+    flex-direction: column;
+}

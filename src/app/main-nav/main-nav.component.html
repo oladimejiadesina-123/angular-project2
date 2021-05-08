@@ -1,8 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+  <mat-sidenav #drawer class="sidenav"
+      mode="side"
+      opened>
     <mat-toolbar><span>s</span> Express Lands</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#"> <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>Dashboard</a>
@@ -10,7 +9,7 @@
       <a mat-list-item href="#">	<mat-icon>people_outline</mat-icon>Menu Item 2</a>
       <a mat-list-item href="#">Menu Item 3</a>
       <a mat-list-item href="#">Menu Item 4</a>
-      <a mat-list-item href="#">Menu Item 5</a>
+      <a mat-list-item href="#"> <span><i class="far fa-edit"></i></span> Menu Item 5</a>
       <div class="last">
 
         <a mat-list-item href="#">
@@ -29,14 +28,10 @@
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+        (click)="drawer.toggle()">
         <mat-icon> short_text </mat-icon>
        
       </button>
-      <div>
-        <mat-icon class="larger-screen"> short_text</mat-icon>
-      </div>
       <span class="d-flex"></span>
       <div class="head">
         <div class="left">

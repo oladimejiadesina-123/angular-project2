@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { CardComponent } from './components/card/card.component';
 import { NavComponent } from './components/nav/nav.component';
 import { CardTwoComponent } from './components/card-two/card-two.component';
+import { DoughnutComponent } from './components/doughnut/doughnut.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CardTwoComponent } from './components/card-two/card-two.component';
     MainNavComponent,
     CardComponent,
     NavComponent,
-    CardTwoComponent
+    CardTwoComponent,
+    DoughnutComponent
   ],
   imports: [
     BrowserModule,
