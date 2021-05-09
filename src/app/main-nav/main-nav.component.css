@@ -1,4 +1,13 @@
-
+.mat-toolbar-row, .mat-toolbar-single-row {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 16px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  background: white;
+}
 .sidenav-container {
   height: 100%;
   background-color: white;
@@ -9,7 +18,8 @@
 }
 
 .sidenav .mat-toolbar {
-  background: inherit;
+  background: white;
+
 }
 
 .mat-toolbar.mat-primary {
@@ -44,11 +54,13 @@
 .card {
   border: 1px solid;
   width: 230px;
+  max-width: 200px;
   height: 50px;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   border: none;
   outline: none;
+  box-shadow: 2px 2px rgb(238, 234, 234);
 }
 .center {
   font-size: 12px;
@@ -63,16 +75,46 @@
 .flex-it {
   display: flex;
 }
+span.circle {
+  background: blue;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+.light {
+  position: absolute;
+  font-size: 12px;
+  left: 22px;
+  top: 15px;
+  color: white;
+}
+.Express {
+  margin-left: 11px;
+  font-size: 13px;
+}
+
+.btn-small {
+  margin-left: 23px;
+  width: 40px;
+  height: 33px;
+  margin-top: 8px;
+  background: orange;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+
+}
 button.small {
   font-size: 8px;
-  margin-top: 6px;
+  margin-top: 8px;
   border-radius: 5px;
   border: none;
   outline: none;
   color: white;
   width: 40px;
   height: 33px;
-  margin-left: 55px;
+  margin-left: 23px;
   background: rgb(87, 56, 201);
 }
 svg.h-6.w-6 {
@@ -92,15 +134,9 @@ svg.h-6.w-6 {
   right: 20px;
   color: antiquewhite;
 }
-.btn-small {
-  margin-left: 50px;
-  width: 40px;
-  height: 33px;
-  margin-top: 6px;
-  background: orange;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  color: white;
 
+.mat-drawer-inner-container {
+
+  overflow: hidden;
+ 
 }

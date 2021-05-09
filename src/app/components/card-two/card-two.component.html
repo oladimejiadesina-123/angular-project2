@@ -1,28 +1,32 @@
 <div class="ge-card">
-  <mat-card class="example-card">
-      <mat-card-header>
-        <mat-card-title class="main_title">
+  <div class="text-card text_card">
+    <div class="heading text_head">
+      <div>
+        <div class="main_title">
           <div class="spaci">
             <p>Annual Work Budget</p>
             <select name="" id="">
               <option value="">This Year</option>
             </select>
           </div>
-       
-        </mat-card-title>
-        <mat-card-subtitle>Summary</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <div class="capex">
-          capex
+          <p>Summary</p>
         </div>
-      </mat-card-content>
-      <mat-card-actions>
-        <div class="card-To">
+      </div>
+    </div>
+      <div>
+        <div class="capex">
+          CAPEX
+          <app-doughnut></app-doughnut>
+        </div>
+      </div>
+
+      <div class="text-box">
+      <div>
+        <div class="card-To to-colour-one">
           <div class="Total_Play">
               <div class="total">
                     <div class="cards-flex">
-                      <p>Total Play (NGN)</p>
+                      <p class="totalposition">Total Play (NGN)</p>
                       <p>50,000,000</p>
                     </div>
                   <div class="cards-flex">
@@ -50,32 +54,38 @@
             </div>
           </div>
         </div>
-      </mat-card-actions>
-    </mat-card>
-  <mat-card class="example-card">
-      <mat-card-header>
-        <mat-card-title class="main_title">
+      </div>
+    </div>
+    </div>
+
+
+    <div class="text-card text_card">
+      <div class="heading text_head"> 
+      <div>
+        <div class="main_title">
           <div class="spaci">
             <p>Annual Play Budget</p>
             <select name="" id="">
               <option value="">This Year</option>
             </select>
           </div>
-       
-        </mat-card-title>
-        <mat-card-subtitle>Summary</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
+          <p>Summary</p>
+        </div>
+      </div>
+    </div>
+      <div>
         <div class="opex">
           OPEX
+          <app-doughnut></app-doughnut>
         </div>
-      </mat-card-content>
-      <mat-card-actions>
-        <div class="card-To">
+    </div>
+      <div class="text-box">
+      <div>
+        <div class="card-To to-colour-two">
           <div class="Total_Play">
               <div class="total">
                     <div class="cards-flex">
-                      <p>Total Work (NGN)</p>
+                      <p class="totalposition">Total Work (NGN)</p>
                       <p>20,000,000</p>
                     </div>
                   <div class="cards-flex">
@@ -102,48 +112,58 @@
             </div>
           </div>
         </div>
-      </mat-card-actions>
-    </mat-card>
-  <mat-card class="example-card">
-      <mat-card-header>
-        <mat-card-title class="main_title">
-          <div class="spaci">
-            <p>Cards Count</p>
-          </div>
-       
-        </mat-card-title>
-        <mat-card-subtitle>Summary</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <div class="assets">
-          ASSETS
-        </div>
-      </mat-card-content>
-      <mat-card-actions>
-        <div class="card-To">
-          <div class="Total_Play">
-              <div class="total">
-                    <div class="cards-flex">
-                      <p>Total cards</p>
-                      <p>392,383</p>
-                    </div>
-                  <div class="cards-flex">
-                        <span>  <input type="radio" id="ma" name="gen" value="ma">In-use</span>
-                          <span>  <input type="radio" id="ma" name="gen" value="ma">In-active</span>
-                  </div>
+      </div>
+  </div>
+    </div>
+
+      <div class="text-card">
+        <div class="heading">
+          <div>
+            <div class="main_title">
+              <div class="spaci">
+                <p>Cards Count</p>
               </div>
-          </div>
-          <div class="total">
-            <div class="cards-flex">
-              <span>Card in-use</span>
-              <span>342,383</span>
-          </div>
-          <div class="cards-flex">
-                <span>In-active</span>
-              <span>50,000</span>
+              <p>Summary</p>
             </div>
           </div>
         </div>
-      </mat-card-actions>
-    </mat-card>
+        <div>
+          <div class="assets">
+            ASSETS
+            <app-doughnut></app-doughnut>
+          </div>
+        </div>
+
+        <div class="text-box">
+          <div>
+            <div>
+              <div class="card-To to-colour-three">
+                <div class="Total_Play">
+                    <div class="total">
+                          <div class="cards-flex">
+                            <p class="totalposition">Total cards</p>
+                            <p>392,383</p>
+                          </div>
+                        <div class="cards-flex">
+                              <span>  <input type="radio" id="ma" name="gen" value="ma">In-use</span>
+                                <span>  <input type="radio" id="ma" name="gen" value="ma">In-active</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                  <div class="cards-flex">
+                    <span>Card in-use</span>
+                    <span>342,383</span>
+                </div>
+                <div class="cards-flex">
+                      <span>In-active</span>
+                    <span>50,000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
   </div>

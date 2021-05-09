@@ -15,6 +15,7 @@ import { CardComponent } from './components/card/card.component';
 import { NavComponent } from './components/nav/nav.component';
 import { CardTwoComponent } from './components/card-two/card-two.component';
 import { DoughnutComponent } from './components/doughnut/doughnut.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DoughnutComponent } from './components/doughnut/doughnut.component';
     CardComponent,
     NavComponent,
     CardTwoComponent,
-    DoughnutComponent
+    DoughnutComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { DoughnutComponent } from './components/doughnut/doughnut.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
